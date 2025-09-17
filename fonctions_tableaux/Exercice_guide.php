@@ -18,6 +18,7 @@ $articles = [
 
 
 // On prend seulement les articles qui sont publiés (published = true)
+// array_values kat 3awd t'rteb les index (0, 1, 2...) dyal tableau jdid.
 $published = array_values(array_filter($articles, fn($a) => $a['published'] ?? false));
 
 // On transforme la liste des articles publiés pour ajouter un slug
@@ -35,6 +36,7 @@ $normalized = array_map(
 // On classe les articles du plus vu au moins vu
 usort($normalized, fn($x, $y) => $y['views'] <=> $x['views']);
 
+// array_reduce kat "reduce" (kat 9less) wa7d tableau l 9ima wa7da (f had l'cas, tableau dyal résumé).
 // On calcule des statistiques sur les articles publiés (nombre, total vues...)
 $summary = array_reduce(
   $published,
