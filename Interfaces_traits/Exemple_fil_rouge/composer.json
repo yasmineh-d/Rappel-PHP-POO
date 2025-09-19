@@ -1,0 +1,18 @@
+{
+    "name": "solicode/rappel-php-poo",
+    "description": "Projet de rappel PHP POO",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Solicode\\RappelPhpPoo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yasmineh-d",
+            "email": "yassminehadad75@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
