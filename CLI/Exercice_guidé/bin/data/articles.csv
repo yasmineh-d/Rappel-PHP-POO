@@ -1,0 +1,7 @@
+# CSV de test (Windows: utilisez `type` à la place de `cat`)
+cat <<CSV > /tmp/articles.csv
+title,excerpt,views,published,author
+Intro Laravel,,120,true,Amina
+PHP 8 en pratique,Tour des nouveautés,300,true,Yassine
+Composer & Autoload,,90,false,Amina
+CSV
